@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM</title>
+</head>
+<body>
+    
+    <div class= "formstyle">  
+
+        <form>  
+            
+        <input class = "atmfied" type ="text" name = "answer" id="answer"> 
+       
+
+        <div class="atm">
+
+            <div class="numbers">
+                
+                <br> <br>  
+                <input type = "button" value = "1" onclick = "answer.value += '1' ">  
+                <input type = "button" value = "2" onclick = "answer.value += '2' ">  
+                <input type = "button" value = "3" onclick = "answer.value += '3' "> 
+            
+
+                <br> <br>  
+                    
+                <input type = "button" value = "4" onclick = "answer.value += '4' ">  
+                <input type = "button" value = "5" onclick = "answer.value += '5' ">  
+                <input type = "button" value = "6" onclick = "answer.value += '6' ">
+
+        
+                <br> <br>  
+                    
+                <input type = "button" value = "7" onclick = "answer.value += '7' ">  
+                <input type = "button" value = "8" onclick = "answer.value += '8' ">  
+                <input type = "button" value = "9" onclick = "answer.value += '9' ">  
+                <br> <br>  
+                    
+                    
+                <input type = "button" value = "0" onclick = "answer.value += '0' ">   
+
+            </div> 
+                
+            <div class="operation">
+                <input type = "button"  value = "შეტანა" onclick = put_in()> 
+                <input type = "button" value = "ბალანსი"  onclick = get_balance()>
+                <input type = "button" value = "გამოტანა"  onclick = make_withdrawal()>
+                <input type = "button" value = "გაასუფთავე" onclick = "answer.value = ' ' " > 
+            </div>
+
+        </div>
+        </form>  
+    </div>  
+
+
+    <script src="main.js"></script>
+</body>
+</html>
